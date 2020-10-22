@@ -1,0 +1,1 @@
+digitalWrite(ledPin, HIGH);
