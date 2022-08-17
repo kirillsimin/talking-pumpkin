@@ -1,5 +1,5 @@
 // pir
-#define motionInterval 7*1000
+#define motionInterval 8*1000
 #define timeGap 1000
 #define pirPin 21
 
@@ -18,6 +18,6 @@ int soundLedPin = 23;
 // MP3
 HardwareSerial mySoftwareSerial(1);
 DFRobotDFPlayerMini myDFPlayer;
-void printDetail(uint8_t type, int value);
+// void printDetail(uint8_t type, int value);
 
 boolean waitingForVoice = false;

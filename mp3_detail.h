@@ -1,4 +1,6 @@
 void printDetail(uint8_t type, int value){
+  Serial.println(type);
+  Serial.println(value);
   switch (type) {
     case TimeOut:
       Serial.println(F("Time Out!"));
