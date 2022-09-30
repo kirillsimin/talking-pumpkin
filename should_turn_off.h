@@ -1,6 +1,5 @@
 
 if(shouldTurnOff()) {
-  Serial.println();
   Serial.println("Timer is up. No motion. Turning off.");
 
   timerIsGoing = false;

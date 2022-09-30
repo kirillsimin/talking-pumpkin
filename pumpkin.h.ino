@@ -1,10 +1,7 @@
 #include <Arduino.h>
 #include "DFRobotDFPlayerMini.h"
-
 #include "constants.h"
-
 #include "time_functions.h"
-#include "mp3_detail.h"
 
 
 void setup()

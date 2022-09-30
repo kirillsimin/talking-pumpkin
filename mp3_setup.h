@@ -3,7 +3,7 @@
 
   Serial.println(F("Connecting to DFPlayer."));
   while (!myDFPlayer.begin(mySoftwareSerial)) {  //Use softwareSerial to communicate with mp3.
-    Serial.println('.');
+    Serial.print('.');
   }
   Serial.println(F("DFPlayer Mini online."));
   
