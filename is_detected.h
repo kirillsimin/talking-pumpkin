@@ -1,5 +1,5 @@
 if(isDetected){
-  // Serial.println(" * * * MOTION DETECTED * * * ");
+  Serial.println(" * * * MOTION DETECTED * * * ");
   timerIsGoing = true;
 
   if (shouldTurnOn()) {

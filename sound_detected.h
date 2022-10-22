@@ -7,6 +7,8 @@ if (waitingForVoice == true & sound == true) {
   digitalWrite(soundLedPin, LOW);
   waitingForVoice = false;
 
+  delay(1000);
+
   // play random RESPONSE
   int responseCount = -1;
   while (responseCount == -1) {
