@@ -13,11 +13,11 @@
   myDFPlayer.volume(28);  //Set volume value (0~30).
   
   //----Set different EQ----
-//  myDFPlayer.EQ(DFPLAYER_EQ_NORMAL);
+  myDFPlayer.EQ(DFPLAYER_EQ_NORMAL);
 //  myDFPlayer.EQ(DFPLAYER_EQ_POP);
 //  myDFPlayer.EQ(DFPLAYER_EQ_ROCK);
 //  myDFPlayer.EQ(DFPLAYER_EQ_JAZZ);
 //  myDFPlayer.EQ(DFPLAYER_EQ_CLASSIC);
-  myDFPlayer.EQ(DFPLAYER_EQ_BASS);
+//  myDFPlayer.EQ(DFPLAYER_EQ_BASS);
 
   int delayms=100;

@@ -1,5 +1,5 @@
 if(isDetected){
-  Serial.println(" * * * MOTION DETECTED * * * ");
+  // Serial.println(" * * * MOTION DETECTED * * * ");
   timerIsGoing = true;
 
   if (shouldTurnOn()) {
@@ -13,7 +13,7 @@ if(isDetected){
       greetingsCount = myDFPlayer.readFileCountsInFolder(1);
     }
 
-    int randomGreeting = random(1, greetingsCount);
+    randomGreeting = random(1, greetingsCount);
     
     Serial.print("Playing greeting ");
     Serial.print(randomGreeting);
@@ -24,8 +24,6 @@ if(isDetected){
 
     responsePlayed = false;
   }
-
-  
   lastTrigger = millis();
   
 }

@@ -7,7 +7,7 @@ if (waitingForVoice == true & sound == true) {
   digitalWrite(soundLedPin, LOW);
   waitingForVoice = false;
 
-  delay(1000);
+  delay(100);
 
   // play random RESPONSE
   int responseCount = -1;
@@ -18,11 +18,12 @@ if (waitingForVoice == true & sound == true) {
   int randomResponse = random(1, responseCount);
   
   Serial.print("Playing response ");
-  Serial.print(randomResponse);
-  Serial.print(" of ");
-  Serial.println(responseCount);
+  // same as greeting for thanksgiving jokes
+  Serial.println(randomGreeting);
+  //  Serial.print(" of ");
+  //  Serial.println(responseCount);
 
-  myDFPlayer.playFolder(2, randomResponse);
+  myDFPlayer.playFolder(2, randomGreeting);
 
   responsePlayed = true;
 }
