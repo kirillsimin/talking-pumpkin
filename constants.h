@@ -1,6 +1,5 @@
 // pir
 #define motionInterval 30*1000
-#define timeGap 1000
 #define pirPin 21
 
 unsigned long now = millis();

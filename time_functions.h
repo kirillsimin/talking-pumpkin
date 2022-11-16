@@ -5,7 +5,7 @@ int timePassed()
 
 int timeLeft()
 {
-  return motionInterval - (now - lastTrigger);
+  return motionInterval - timePassed();
 }
 
 bool shouldTurnOff() 
@@ -14,13 +14,10 @@ bool shouldTurnOff()
 }
 
 bool shouldTurnOn()
-{  
+{ 
   if (lastTrigger == 0) {
     return true;
   }
-
-  Serial.print("Time passed since last trigger: ");
-  Serial.println(timePassed());
   
-  return (timePassed() > motionInterval - timeGap);
+  return (timePassed() > motionInterval);
 }

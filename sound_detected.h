@@ -16,14 +16,16 @@ if (waitingForVoice == true & sound == true) {
   }
 
   int randomResponse = random(1, responseCount);
+
+  // same as greeting for thanksgiving jokes
+  randomResponse = randomGreeting;
   
   Serial.print("Playing response ");
-  // same as greeting for thanksgiving jokes
-  Serial.println(randomGreeting);
-  //  Serial.print(" of ");
-  //  Serial.println(responseCount);
+  Serial.print(randomResponse);
+  Serial.print(" of ");
+  Serial.println(responseCount);
 
-  myDFPlayer.playFolder(2, randomGreeting);
+  myDFPlayer.playFolder(2, randomResponse);
 
   responsePlayed = true;
 }

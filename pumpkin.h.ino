@@ -24,7 +24,6 @@ void setup()
  
 void loop()
 {
-  
   bool isDetected = digitalRead(pirPin);
   now = millis();
  
