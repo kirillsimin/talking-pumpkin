@@ -24,13 +24,12 @@ void setup()
  
 void loop()
 {
-  bool isDetected = digitalRead(pirPin);
   now = millis();
+  bool isDetected = digitalRead(pirPin);
  
   #include "is_detected.h"
 
   #include "sound_detected.h"
  
   #include "should_turn_off.h"
-
 }

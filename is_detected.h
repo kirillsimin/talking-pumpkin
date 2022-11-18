@@ -1,12 +1,9 @@
 if(isDetected){
-  timerIsGoing = true;
-
   if (shouldTurnOn()) {
     Serial.println();
     Serial.println("MOTION. Timer is not going. Turning on.");
     Serial.println();
     digitalWrite(motionLedPin, HIGH);
-    lastTrigger = millis();
 
     // play GREETING
     int greetingsCount = -1;
@@ -25,6 +22,9 @@ if(isDetected){
 
     responsePlayed = false;
   }
+  
+  timerIsGoing = true;
+  lastTrigger = millis();
 }
 
 if (myDFPlayer.available()) {    

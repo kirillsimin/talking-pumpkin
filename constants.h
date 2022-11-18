@@ -1,10 +1,10 @@
 // pir
-#define motionInterval 30*1000
+#define motionInterval 10*1000
 #define pirPin 21
 
 unsigned long now = millis();
 unsigned long lastTrigger = 0;
-boolean timerIsGoing = true;
+boolean timerIsGoing = false;
 
 int randomGreeting = 0;
 
