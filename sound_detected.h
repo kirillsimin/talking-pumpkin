@@ -7,7 +7,7 @@ if (waitingForVoice == true & sound == true) {
   digitalWrite(soundLedPin, LOW);
   waitingForVoice = false;
 
-  delay(100);
+  delay(1000);
 
   // play random RESPONSE
   int responseCount = -1;
@@ -18,7 +18,7 @@ if (waitingForVoice == true & sound == true) {
   int randomResponse = random(1, responseCount);
 
   // same as greeting for thanksgiving jokes
-  randomResponse = randomGreeting;
+  // randomResponse = randomGreeting;
   
   Serial.print("Playing response ");
   Serial.print(randomResponse);

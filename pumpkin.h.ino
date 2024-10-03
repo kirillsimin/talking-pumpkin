@@ -21,11 +21,11 @@ void setup()
 
   #include "mp3_setup.h"
 }
- 
+
 void loop()
 {
-  now = millis();
   bool isDetected = digitalRead(pirPin);
+  now = millis();
  
   #include "is_detected.h"
 

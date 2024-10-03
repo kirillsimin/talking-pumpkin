@@ -1,5 +1,8 @@
+unsigned long lastCheckTime = 0;
+const unsigned long checkInterval = 5000;
+
 // pir
-#define motionInterval 10*1000
+#define motionInterval 20*1000
 #define pirPin 21
 
 unsigned long now = millis();
